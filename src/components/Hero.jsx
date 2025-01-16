@@ -15,7 +15,7 @@ const Hero = () => {
 
         <div className="flex flex-row justify-between items-center w-full">
           <h1 className="flex-1 font-poppins font-semibold ss:text-[60px] text-[45px] text-white ss:leading-[95.8px] leading-[60px]">
-            AI Women Rising
+            AI Women Rising:
             <br className="sm:block hidden" />{" "}
             <span className="text-gradient">
               {" "}
