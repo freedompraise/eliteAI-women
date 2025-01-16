@@ -10,7 +10,7 @@ const Footer = () => (
       <div className="flex flex-col justify-center items-center text-center">
         <img
           src={logo}
-          alt="hoobank"
+          alt="elite-global-logo"
           className="w-[200px] h-auto object-contain mb-4"
         />
         <p className={`${styles.paragraph} max-w-[312px]`}>

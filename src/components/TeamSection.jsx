@@ -34,19 +34,19 @@ const TeamSection = () => {
       ></div>
 
       {/* Section Title */}
-      <h2 className="text-3xl font-bold text-white text-center mb-12">
+      <h2 className="text-4xl font-bold text-white text-center mb-16">
         Meet the Visionaries Behind the Program
       </h2>
 
       {/* Team Grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 relative z-10">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 relative z-10">
         {team.map((member, index) => (
           <div
             key={index}
-            className="flex flex-col items-center text-center p-6 bg-white rounded-lg shadow-lg transition-transform duration-300 hover:scale-105"
+            className="flex flex-col items-center text-center p-8 bg-blue-gradient-2 rounded-lg shadow-xl transition-transform duration-300 hover:scale-105"
           >
             {/* Photo */}
-            <div className="w-28 h-28 rounded-full border-4 border-gray-300 overflow-hidden mb-4">
+            <div className="w-36 h-36 rounded-full border-4 border-gray-300 overflow-hidden mb-6">
               <img
                 src={member.image}
                 alt={member.name}
@@ -55,12 +55,12 @@ const TeamSection = () => {
             </div>
 
             {/* Name */}
-            <h3 className="text-lg font-semibold text-gray-900">
+            <h3 className="text-2xl font-semibold text-gray-900">
               {member.name}
             </h3>
 
             {/* Role */}
-            <p className="text-sm text-gray-600">{member.role}</p>
+            <p className="text-lg text-white">{member.role}</p>
           </div>
         ))}
       </div>

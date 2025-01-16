@@ -1,7 +1,6 @@
 import Navbar from "./Navbar";
 import Hero from "./Hero";
 import Stats from "./Stats";
-import Billing from "./Billing";
 import Clients from "./Clients";
 import CTA from "./CTA";
 import Footer from "./Footer";
@@ -17,7 +16,6 @@ export {
   ProgramDetails,
   TeamSection as Team,
   Stats,
-  Billing,
   Clients,
   CTA,
   Footer,

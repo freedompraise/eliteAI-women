@@ -1,34 +1,29 @@
-import {
-  FaRobot,
-  FaBriefcase,
-  FaChalkboardTeacher,
-  FaGraduationCap,
-} from "react-icons/fa";
+import { FaLaptopCode, FaGlobe, FaUsers, FaCertificate } from "react-icons/fa";
 
 const highlights = [
   {
-    title: "Hands-On AI Training",
+    title: "AI in Local Industries",
     description:
-      "Gain practical skills in AI through immersive projects and real-world applications.",
-    icon: <FaRobot className="text-blue-700 text-3xl" />,
+      "Learn how AI impacts sectors like agriculture, healthcare, and education with real-world applications.",
+    icon: <FaLaptopCode className="text-green-700 text-3xl" />,
   },
   {
-    title: "Job Readiness Modules",
+    title: "Global Exposure",
     description:
-      "Learn resume writing, interview skills, and job search strategies tailored to AI careers.",
-    icon: <FaBriefcase className="text-blue-600 text-3xl" />,
+      "Get connected with international experts and attend virtual conferences to broaden your horizon.",
+    icon: <FaGlobe className="text-blue-600 text-3xl" />,
   },
   {
-    title: "Business Mentorship",
+    title: "Empowering Communities",
     description:
-      "Connect with experienced mentors to guide your journey in AI-related entrepreneurship.",
-    icon: <FaChalkboardTeacher className="text-blue-500 text-3xl" />,
+      "Develop projects that directly benefit your community, fostering sustainable development.",
+    icon: <FaUsers className="text-purple-600 text-3xl" />,
   },
   {
-    title: "Internships and Certifications",
+    title: "Accredited Certifications",
     description:
-      "Earn globally recognized certifications and participate in internships to gain industry exposure.",
-    icon: <FaGraduationCap className="text-blue-400 text-3xl" />,
+      "Earn globally recognized certifications to establish your expertise in the AI domain.",
+    icon: <FaCertificate className="text-yellow-500 text-3xl" />,
   },
 ];
 
@@ -36,26 +31,33 @@ const ProgramHighlights = () => {
   return (
     <section
       id="program-highlights"
-      className="bg-gray-100 py-16 flex justify-center items-center flex-col"
+      className="relative bg-gradient-to-r from-gray-800 via-gray-900 to-black py-16 flex justify-center items-center flex-col"
     >
-      <div className="max-w-6xl w-full px-6">
-        <h2 className="text-4xl font-bold text-center text-gray-800">
-          Empowering Steps Towards Success
+      {/* Background Image */}
+      <div className="absolute inset-0 z-0">
+        <img
+          src="/t-shirt.jpg"
+          alt="T-Shirt Background"
+          className="w-full h-full object-cover opacity-50"
+        />
+        <div className="absolute inset-0 bg-black bg-opacity-50"></div>
+      </div>
+
+      {/* Content */}
+      <div className="relative z-10 max-w-6xl w-full px-6 text-white">
+        <h2 className="text-4xl font-bold text-center">
+          Unlock Your AI Potential
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-10">
           {highlights.map((item, index) => (
             <div
               key={index}
-              className={`flex items-start gap-6 p-6 bg-white rounded-lg shadow-md hover:shadow-xl transition-transform duration-300 ${
-                index % 2 === 0 ? "animate-slide-left" : "animate-slide-right"
-              }`}
+              className={`flex items-start gap-6 p-6 bg-gray-800 bg-opacity-70 rounded-xl shadow-lg transform hover:scale-105 transition-transform duration-300`}
             >
               <div className="flex-shrink-0">{item.icon}</div>
               <div>
-                <h3 className="text-xl font-semibold text-gray-800 mb-2">
-                  {item.title}
-                </h3>
-                <p className="text-gray-600">{item.description}</p>
+                <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
+                <p>{item.description}</p>
               </div>
             </div>
           ))}
