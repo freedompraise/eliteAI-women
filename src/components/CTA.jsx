@@ -15,10 +15,10 @@ const CTA = () => {
     >
       <div className="flex-1 flex flex-col">
         <h2 className={styles.heading2}>
-          Empower Yourself in the AI Industry – Apply Today!
+          Empower Yourself in the AI Industry and Apply Today!
         </h2>
         <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
-          Join a growing community of women pioneering AI careers. Don’t miss
+          Join a growing community of women pioneering AI careers. Do not miss
           out!
         </p>
       </div>
