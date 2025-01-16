@@ -1,3 +1,5 @@
+import { story as videoFile, tshirt as tshirtImage } from "../assets";
+
 const MediaSection = () => {
   return (
     <section
@@ -11,11 +13,12 @@ const MediaSection = () => {
       >
         <div className="relative w-4/5 rounded-lg overflow-hidden border-2 border-gray-300 shadow-lg">
           <video
-            className="w-full h-auto object-cover"
+            className="w-full h-[500px] object-cover"
             poster="path-to-placeholder-image.jpg"
             controls
+            loading="lazy"
           >
-            <source src="path-to-video.mp4" type="video/mp4" />
+            <source src={videoFile} type="video/mp4" />
             Your browser does not support the video tag.
           </video>
           <div className="absolute inset-0 flex justify-center items-center bg-black bg-opacity-50">
@@ -48,8 +51,7 @@ const MediaSection = () => {
       <div
         className="w-full md:w-1/2 flex flex-col items-center md:items-start px-6 md:px-10 animate-fade"
         style={{
-          backgroundImage:
-            "linear-gradient(to right, rgba(255,255,255,0.8), rgba(255,255,255,0)), url('path-to-tshirt-image.jpg')",
+          backgroundImage: `linear-gradient(to right, rgba(255,255,255,0.8), rgba(255,255,255,0)), url(${tshirtImage})`,
           backgroundSize: "cover",
           backgroundBlendMode: "lighten",
         }}
