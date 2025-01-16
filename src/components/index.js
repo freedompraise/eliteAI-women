@@ -1,23 +1,23 @@
 import Navbar from "./Navbar";
 import Hero from "./Hero";
-import Business from "./Business";
 import Stats from "./Stats";
 import Billing from "./Billing";
-import CardDeal from "./CardDeal";
-import Testimonials from "./Testimonials";
 import Clients from "./Clients";
 import CTA from "./CTA";
 import Footer from "./Footer";
 import ProgramHighlights from "./Highlights";
+import MediaSection from "./MediaSection";
+import ProgramDetails from "./ProgramDetails";
+import TeamSection from "./TeamSection";
 
 export {
   Navbar,
   Hero,
-  Business,
+  MediaSection as Media,
+  ProgramDetails,
+  TeamSection as Team,
   Stats,
   Billing,
-  CardDeal,
-  Testimonials,
   Clients,
   CTA,
   Footer,

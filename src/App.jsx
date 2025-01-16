@@ -4,9 +4,9 @@ import {
   Hero,
   Stats,
   Highlights,
-  Billing,
-  CardDeal,
-  Testimonials,
+  Media,
+  ProgramDetails,
+  Team,
   Clients,
   CTA,
   Footer,
@@ -32,9 +32,9 @@ const App = () => (
         <div className={`${styles.boxWidth}`}>
           <Stats />
           <Highlights />
-          <Billing />
-          <CardDeal />
-          <Testimonials />
+          <Media />
+          <ProgramDetails />
+          <Team />
           <Clients />
           <CTA />
           <Footer />
