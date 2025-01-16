@@ -24,8 +24,6 @@ import egit from "./EGIT-logo.png";
 import ea from "./EA-logo.png";
 import uniben from "./uniben-logo.png";
 import lasu from "./lasu-logo.png";
-import story from "./story.mp4";
-import tshirt from "./t-shirt.png";
 
 export {
   airbnb,
@@ -54,6 +52,4 @@ export {
   ea,
   uniben,
   lasu,
-  story,
-  tshirt,
 };
