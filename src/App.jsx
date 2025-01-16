@@ -14,9 +14,21 @@ import {
 import { motion } from "framer-motion";
 
 const animations = {
+  initial: { opacity: 0, y: 100 },
+  whileInView: { opacity: 1, y: 0 },
+  transition: { duration: 1.2, ease: "easeOut" },
+  viewport: { once: true, amount: 0.3 }, // Trigger once, when 30% of section is in view
+};
+
+const staggerAnimations = {
   initial: { opacity: 0, y: 50 },
-  animate: { opacity: 1, y: 0 },
-  transition: { duration: 0.8, ease: "easeOut" },
+  whileInView: { opacity: 1, y: 0 },
+  transition: {
+    duration: 1.2,
+    ease: "easeOut",
+    staggerChildren: 0.3, // Delay between child animations
+  },
+  viewport: { once: true, amount: 0.3 },
 };
 
 const App = () => (
@@ -45,25 +57,25 @@ const App = () => (
           <motion.div {...animations}>
             <Stats />
           </motion.div>
-          <motion.div {...animations}>
+          <motion.div {...staggerAnimations}>
             <Highlights />
           </motion.div>
-          <motion.div {...animations}>
+          <motion.div {...staggerAnimations}>
             <Media />
           </motion.div>
-          <motion.div {...animations}>
+          <motion.div {...staggerAnimations}>
             <ProgramDetails />
           </motion.div>
-          <motion.div {...animations}>
+          <motion.div {...staggerAnimations}>
             <Team />
           </motion.div>
-          <motion.div {...animations}>
+          <motion.div {...staggerAnimations}>
             <Clients />
           </motion.div>
-          <motion.div {...animations}>
+          <motion.div {...staggerAnimations}>
             <CTA />
           </motion.div>
-          <motion.div {...animations}>
+          <motion.div {...staggerAnimations}>
             <Footer />
           </motion.div>
         </div>
