@@ -1,4 +1,19 @@
-import { people01, people02, people03, facebook, instagram, linkedin, twitter, airbnb, binance, coinbase, dropbox, send, shield, star  } from "../assets";
+import {
+  people01,
+  people02,
+  people03,
+  facebook,
+  instagram,
+  linkedin,
+  twitter,
+  airbnb,
+  binance,
+  coinbase,
+  dropbox,
+  send,
+  shield,
+  star,
+} from "../assets";
 
 export const navLinks = [
   {
@@ -73,18 +88,18 @@ export const feedback = [
 export const stats = [
   {
     id: "stats-1",
-    title: "User Active",
-    value: "3800+",
+    title: "participants/year",
+    value: "1,000",
   },
   {
     id: "stats-2",
-    title: "Trusted by Company",
-    value: "230+",
+    title: "Job Placement of participants/year",
+    value: "70%",
   },
   {
     id: "stats-3",
-    title: "Transaction",
-    value: "$230M+",
+    title: "participants do their business launched/year",
+    value: "30%",
   },
 ];
 
