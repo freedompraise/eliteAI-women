@@ -12,20 +12,20 @@ import {
 
 export const navLinks = [
   {
-    id: "home",
-    title: "Home",
+    id: "program-details",
+    title: "Program",
   },
   {
-    id: "features",
-    title: "Features",
+    id: "media-section",
+    title: "Media",
   },
   {
-    id: "product",
-    title: "Product",
+    id: "cta",
+    title: "Apply Now",
   },
   {
     id: "clients",
-    title: "Clients",
+    title: "Partners",
   },
 ];
 
