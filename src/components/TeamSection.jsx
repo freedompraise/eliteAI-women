@@ -1,7 +1,4 @@
-import blessingImage from "../assets/blessing.jpg";
-import amakaImage from "../assets/amaka.jpg";
-import olaImage from "../assets/ola.jpg";
-import backgroundImage from "../assets/background-image.jpg";
+import { bg, blessingImage, amakaImage, olaImage } from "../assets";
 
 const TeamSection = () => {
   const team = [
@@ -30,7 +27,7 @@ const TeamSection = () => {
       {/* Transparent Background Image */}
       <div
         className="absolute inset-0 opacity-10 bg-center bg-cover"
-        style={{ backgroundImage: `url(${backgroundImage})` }}
+        style={{ backgroundImage: `url(${bg})` }}
       ></div>
 
       {/* Section Title */}
@@ -39,7 +36,7 @@ const TeamSection = () => {
       </h2>
 
       {/* Team Grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 relative z-10">
+      <div className="grid grid-cols-1 sm:grid-cols-2 font-mono lg:grid-cols-3 gap-10 relative z-10">
         {team.map((member, index) => (
           <div
             key={index}
