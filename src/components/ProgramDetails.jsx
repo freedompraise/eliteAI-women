@@ -4,6 +4,7 @@ import {
   FaChalkboardTeacher,
   FaBriefcase,
 } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 const ProgramDetails = () => {
   const steps = [
@@ -33,6 +34,30 @@ const ProgramDetails = () => {
     },
   ];
 
+  // Motion Variants
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    show: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.2,
+      },
+    },
+  };
+
+  const itemVariants = {
+    hidden: { opacity: 0, y: 80, rotate: -10 },
+    show: {
+      opacity: 1,
+      y: 0,
+      rotate: 0,
+      transition: {
+        duration: 0.4,
+        ease: "easeOut",
+      },
+    },
+  };
+
   return (
     <section
       id="program-details"
@@ -42,11 +67,17 @@ const ProgramDetails = () => {
         <h2 className="text-4xl font-bold font-inter text-center text-white mb-12">
           Program Details at a Glance
         </h2>
-        <div className="relative flex flex-col space-y-12">
+        <motion.div
+          className="relative flex flex-col space-y-12"
+          variants={containerVariants}
+          initial="hidden"
+          animate="show"
+        >
           {steps.map((step, index) => (
-            <div
+            <motion.div
               key={index}
-              className={`flex items-center gap-6 p-8 rounded-lg bg-white shadow-lg transform hover:scale-105 transition-transform duration-300 ${
+              variants={itemVariants}
+              className={`flex items-center gap-6 p-8 rounded-lg bg-white shadow-lg transform hover:scale-110 transition-transform duration-300 ${
                 index % 2 === 0 ? "bg-opacity-90" : "bg-opacity-80"
               }`}
             >
@@ -57,9 +88,9 @@ const ProgramDetails = () => {
                 </h3>
                 <p className="text-gray-600 mt-2">{step.description}</p>
               </div>
-            </div>
+            </motion.div>
           ))}
-        </div>
+        </motion.div>
       </div>
     </section>
   );
