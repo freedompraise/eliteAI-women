@@ -36,7 +36,7 @@ const ProgramDetails = () => {
   return (
     <section
       id="program-details"
-      className="bg-black-gradient-2 py-16 flex flex-col items-center"
+      className="bg-black py-16 flex flex-col items-center"
     >
       <div className="max-w-5xl w-full px-6">
         <h2 className="text-4xl font-bold font-inter text-center text-white mb-12">
