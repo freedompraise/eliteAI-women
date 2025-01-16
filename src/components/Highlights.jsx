@@ -35,11 +35,11 @@ const ProgramHighlights = () => {
     >
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
-        <img
-          src="/t-shirt.jpg"
+        {/* <img
+          src="/t-shirt.png"
           alt="T-Shirt Background"
           className="w-full h-full object-cover opacity-50"
-        />
+        /> */}
         <div className="absolute inset-0 bg-black bg-opacity-50"></div>
       </div>
 
