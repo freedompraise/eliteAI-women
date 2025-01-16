@@ -42,7 +42,7 @@ export const stats = [
   },
   {
     id: "stats-3",
-    title: "participants do their business launched/year",
+    title: "participants get their business launched/year",
     value: "30%",
   },
 ];
