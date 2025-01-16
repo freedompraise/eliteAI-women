@@ -15,7 +15,7 @@ import instagram from "./instagram.svg";
 import linkedin from "./linkedin.svg";
 import twitter from "./twitter.svg";
 import egit from "./EGIT-logo.png";
-import ea from "./EA-logo.png";
+import ea from "./ea-logo.png";
 import uniben from "./uniben-logo.png";
 import lasu from "./lasu-logo.png";
 import memoir from "./memoir-logo.png";
