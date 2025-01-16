@@ -3,11 +3,10 @@ import {
   instagram,
   linkedin,
   twitter,
-  dropbox,
   egit,
   ea,
+  memoir,
   uniben,
-  lasu,
 } from "../assets";
 
 export const navLinks = [
@@ -151,6 +150,6 @@ export const clients = [
   },
   {
     id: "client-4",
-    logo: lasu,
+    logo: memoir,
   },
 ];
