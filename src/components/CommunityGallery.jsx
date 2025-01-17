@@ -45,7 +45,7 @@ const CommunityGallery = () => {
   return (
     <section
       id="community-gallery"
-      className="relative bg-gradient-to-br from-blue-900 via-purple-800 to-blue-600 py-12 overflow-hidden"
+      className="relative bg-blue-gradient-2 py-12 overflow-hidden"
     >
       {/* Background Effects */}
       <div className="absolute inset-0">
@@ -54,7 +54,7 @@ const CommunityGallery = () => {
       </div>
 
       {/* Content */}
-      <div className="relative z-5 max-w-6xl mx-auto px-6">
+      <div className="relative z-8 max-w-6xl mx-auto px-6">
         <h2 className="text-3xl md:text-4xl font-bold text-center text-white mb-8 font-sans">
           Meet Our Amazing Community
         </h2>
