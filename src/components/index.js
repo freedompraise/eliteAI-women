@@ -8,6 +8,7 @@ import ProgramHighlights from "./Highlights";
 import MediaSection from "./MediaSection";
 import ProgramDetails from "./ProgramDetails";
 import TeamSection from "./TeamSection";
+import CommunityGallery from "./CommunityGallery";
 
 export {
   Navbar,
@@ -20,4 +21,5 @@ export {
   CTA,
   Footer,
   ProgramHighlights as Highlights,
+  CommunityGallery,
 };

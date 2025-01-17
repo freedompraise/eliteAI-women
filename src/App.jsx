@@ -7,6 +7,7 @@ import {
   Media,
   ProgramDetails,
   Team,
+  CommunityGallery,
   Clients,
   CTA,
   Footer,
@@ -65,6 +66,9 @@ const App = () => (
           </motion.div>
           <motion.div {...staggerAnimations}>
             <ProgramDetails />
+          </motion.div>
+          <motion.div {...staggerAnimations}>
+            <CommunityGallery />
           </motion.div>
           <motion.div {...staggerAnimations}>
             <Team />

@@ -56,7 +56,7 @@ const ProgramHighlights = () => {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 max-w-6xl w-full px-6 text-white">
+      <div className="relative z-5 max-w-6xl w-full px-6 text-white">
         <h2 className="text-4xl font-bold text-center">
           Unlock Your AI Potential
         </h2>

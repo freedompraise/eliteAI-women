@@ -1,14 +1,5 @@
-import card from "./card.png";
-import logo from "./logo.png";
-import quotes from "./quotes.svg";
-import robot from "./robot.png";
-import send from "./Send.svg";
-import shield from "./Shield.svg";
-import star from "./Star.svg";
 import menu from "./menu.svg";
 import close from "./close.svg";
-import google from "./google.svg";
-import apple from "./apple.svg";
 import arrowUp from "./arrow-up.svg";
 import facebook from "./facebook.svg";
 import instagram from "./instagram.svg";
@@ -23,19 +14,20 @@ import bg from "./background-image.jpg";
 import amakaImage from "./amaka.jpg";
 import olaImage from "./ola.jpg";
 import blessingImage from "./blessing.jpg";
+import member1 from "./member1.jpeg";
+import member2 from "./member2.jpeg";
+import member3 from "./member3.jpeg";
+import member4 from "./member4.jpeg";
+import member5 from "./member5.jpeg";
+import member6 from "./member6.jpeg";
+import member7 from "./member7.jpeg";
+import member8 from "./member8.jpeg";
+import logo from "./logo.png";
+import robot from "./robot.png";
 
 export {
-  card,
-  logo,
-  quotes,
-  robot,
-  send,
-  shield,
-  star,
   menu,
   close,
-  google,
-  apple,
   arrowUp,
   facebook,
   instagram,
@@ -50,4 +42,14 @@ export {
   amakaImage,
   olaImage,
   blessingImage,
+  member1,
+  member2,
+  member3,
+  member4,
+  member5,
+  member6,
+  member7,
+  member8,
+  logo,
+  robot,
 };

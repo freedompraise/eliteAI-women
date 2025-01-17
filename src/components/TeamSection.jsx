@@ -36,7 +36,7 @@ const TeamSection = () => {
       </h2>
 
       {/* Team Grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 font-mono lg:grid-cols-3 gap-10 relative z-10">
+      <div className="grid grid-cols-1 sm:grid-cols-2 font-mono lg:grid-cols-3 gap-10 relative z-5">
         {team.map((member, index) => (
           <div
             key={index}
