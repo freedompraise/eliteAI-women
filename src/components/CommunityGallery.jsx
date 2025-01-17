@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { useEffect, useState } from "react";
 
 import {
   member1,
@@ -23,6 +24,17 @@ const members = [
 ];
 
 const CommunityGallery = () => {
+  const [offsetY, setOffsetY] = useState(0);
+
+  const handleScroll = () => {
+    setOffsetY(window.pageYOffset);
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   const container = {
     hidden: { opacity: 0 },
     show: {
@@ -49,12 +61,18 @@ const CommunityGallery = () => {
     >
       {/* Background Effects */}
       <div className="absolute inset-0">
-        <div className="absolute w-64 h-64 bg-gradient-to-br from-pink-500 to-purple-500 blur-3xl rounded-full -top-10 -left-10 opacity-40"></div>
-        <div className="absolute w-72 h-72 bg-gradient-to-br from-blue-400 to-purple-600 blur-3xl rounded-full bottom-0 right-0 opacity-40"></div>
+        <div
+          className="absolute w-64 h-64 bg-gradient-to-br from-pink-500 to-purple-500 blur-3xl rounded-full -top-10 -left-10 opacity-40"
+          style={{ transform: `translateY(${offsetY * 0.5}px)` }}
+        ></div>
+        <div
+          className="absolute w-72 h-72 bg-gradient-to-br from-blue-400 to-purple-600 blur-3xl rounded-full bottom-0 right-0 opacity-40"
+          style={{ transform: `translateY(${offsetY * 0.3}px)` }}
+        ></div>
       </div>
 
       {/* Content */}
-      <div className="relative z-8 max-w-6xl mx-auto px-6">
+      <div className="relative max-w-6xl mx-auto px-6">
         <h2 className="text-3xl md:text-4xl font-bold text-center text-white mb-8 font-sans">
           Meet Our Amazing Community
         </h2>

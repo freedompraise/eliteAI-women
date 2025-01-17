@@ -47,7 +47,7 @@ const Navbar = () => {
         <div
           className={`${
             toggle ? "flex h-16" : "hidden"
-          } p-6 fixed top-16 left-16 w-screen z-[100]`}
+          } p-6 fixed top-16 left-16 w-screen z-10`}
         >
           <ul className="list-none flex flex-col justify-center items-center flex-1">
             {navLinks.map((nav, index) => (
