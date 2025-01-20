@@ -24,6 +24,18 @@ import member7 from "./member7.jpeg";
 import member8 from "./member8.jpeg";
 import logo from "./logo.png";
 import robot from "./robot.png";
+import review1 from "./review-1.png";
+import review2 from "./review-2.png";
+import review3 from "./review-3.png";
+import review4 from "./review-4.png";
+import review5 from "./review-5.png";
+import review6 from "./review-6.png";
+import review7 from "./review-7.png";
+import review8 from "./review-8.png";
+import review9 from "./review-9.png";
+import review10 from "./review-10.png";
+import review11 from "./review-11.png";
+import review12 from "./review-12.png";
 
 export {
   menu,
@@ -52,4 +64,16 @@ export {
   member8,
   logo,
   robot,
+  review1,
+  review2,
+  review3,
+  review4,
+  review5,
+  review6,
+  review7,
+  review8,
+  review9,
+  review10,
+  review11,
+  review12,
 };

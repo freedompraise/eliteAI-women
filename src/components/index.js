@@ -9,6 +9,7 @@ import MediaSection from "./MediaSection";
 import ProgramDetails from "./ProgramDetails";
 import TeamSection from "./TeamSection";
 import CommunityGallery from "./CommunityGallery";
+import SuccessStories from "./SuccessStories";
 
 export {
   Navbar,
@@ -22,4 +23,5 @@ export {
   Footer,
   ProgramHighlights as Highlights,
   CommunityGallery,
+  SuccessStories,
 };
