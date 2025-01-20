@@ -60,8 +60,8 @@ const SuccessStories = () => {
     >
       {/* Background Effects */}
       <div className="absolute inset-0">
-        <div className="absolute w-96 h-96 bg-gradient-to-br from-purple-500 to-pink-500 blur-3xl rounded-full -top-10 -left-10 opacity-40"></div>
-        <div className="absolute w-96 h-96 bg-gradient-to-br from-blue-400 to-purple-600 blur-3xl rounded-full bottom-0 right-0 opacity-40"></div>
+        <div className="absolute w-96 h-96 bg-blue-gradient blur-3xl rounded-full -top-10 -left-10 opacity-40"></div>
+        <div className="absolute w-96 h-96 bg-blue-gradient blur-3xl rounded-full bottom-0 right-0 opacity-40"></div>
       </div>
 
       {/* Content */}
@@ -98,7 +98,7 @@ const SuccessStories = () => {
             href={googleDriveLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="py-4 px-8 font-poppins font-semibold text-[20px] text-black bg-blue-gradient rounded-lg shadow-lg hover:shadow-woke transition-shadow duration-300"
+            className="py-4 px-8 font-poppin text-[16px] text-black bg-blue-gradient rounded-lg shadow-lg hover:shadow-woke transition-shadow duration-300"
           >
             See More Stories
           </a>
