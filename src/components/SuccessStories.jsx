@@ -72,7 +72,7 @@ const SuccessStories = () => {
 
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-6 text-center">
-        <h2 className="text-4xl md:text-5xl font-extrabold text-white mb-12 font-poppins text-gradient">
+        <h2 className="text-3xl md:text-4xl text-white mb-12 font-poppins text-gradient">
           Success Stories
         </h2>
 
