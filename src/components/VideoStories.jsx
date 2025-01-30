@@ -126,7 +126,7 @@ const VideoStories = () => {
           className="flex justify-center mt-12"
         >
           <a
-            href="YOUR_YOUTUBE_PLAYLIST_LINK"
+            href="https://www.youtube.com/@EliteGlobalAI"
             target="_blank"
             rel="noopener noreferrer"
             className="px-8 py-3 font-semibold rounded-lg bg-gradient-to-r from-indigo-500 to-cyan-500 hover:from-indigo-600 hover:to-cyan-600 text-white transform hover:scale-105 transition-all duration-300 flex items-center gap-2"
