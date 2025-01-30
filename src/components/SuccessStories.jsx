@@ -13,9 +13,15 @@ import {
   review10,
   review11,
   review12,
+  review13,
+  review14,
+  review15,
 } from "../assets";
 
 const reviews = [
+  review13,
+  review14,
+  review15,
   review1,
   review2,
   review3,

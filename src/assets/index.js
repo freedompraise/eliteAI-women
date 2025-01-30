@@ -36,6 +36,9 @@ import review9 from "./review-9.png";
 import review10 from "./review-10.png";
 import review11 from "./review-11.png";
 import review12 from "./review-12.png";
+import review13 from "./review-13.jpeg";
+import review14 from "./review-14.jpeg";
+import review15 from "./review-15.jpeg";
 
 export {
   menu,
@@ -76,4 +79,7 @@ export {
   review10,
   review11,
   review12,
+  review13,
+  review14,
+  review15,
 };
