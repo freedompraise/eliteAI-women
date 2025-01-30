@@ -10,14 +10,14 @@ const VideoStories = () => {
       placeholder: "https://img.youtube.com/vi/VdFM9250bms/maxresdefault.jpg",
     },
     {
-      id: "Sgk0Vb7_Wlw",
-      title: "Chasing Her Dreams",
-      placeholder: "https://img.youtube.com/vi/Sgk0Vb7_Wlw/maxresdefault.jpg",
-    },
-    {
       id: "alvxvGwCUpg",
       title: "Against All Odds",
       placeholder: "https://img.youtube.com/vi/alvxvGwCUpg/maxresdefault.jpg",
+    },
+    {
+      id: "Sgk0Vb7_Wlw",
+      title: "Chasing Her Dreams",
+      placeholder: "https://img.youtube.com/vi/Sgk0Vb7_Wlw/maxresdefault.jpg",
     },
     {
       id: "-cB-7fyRB1s",
