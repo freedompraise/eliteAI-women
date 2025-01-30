@@ -11,6 +11,7 @@ import {
   Clients,
   CTA,
   Footer,
+  VideoStories,
   SuccessStories,
 } from "./components";
 import { motion } from "framer-motion";
@@ -64,6 +65,9 @@ const App = () => (
           </motion.div>
           <motion.div {...staggerAnimations}>
             <Media />
+          </motion.div>
+          <motion.div {...staggerAnimations}>
+            <VideoStories />
           </motion.div>
           <motion.div {...staggerAnimations}>
             <SuccessStories />

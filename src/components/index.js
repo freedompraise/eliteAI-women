@@ -10,10 +10,12 @@ import ProgramDetails from "./ProgramDetails";
 import TeamSection from "./TeamSection";
 import CommunityGallery from "./CommunityGallery";
 import SuccessStories from "./SuccessStories";
+import VideoStories from "./VideoStories";
 
 export {
   Navbar,
   Hero,
+  VideoStories,
   MediaSection as Media,
   ProgramDetails,
   TeamSection as Team,
