@@ -131,7 +131,7 @@ export const socialMedia = [
   {
     id: "social-media-4",
     icon: linkedin,
-    link: "https://www.linkedin.com/",
+    link: "https://www.linkedin.com/posts/ai-women-rising_aiforremotework-digitalcontentcreation-learnandearn-activity-7289717789634834432-lJY7?utm_source=share&utm_medium=member_android",
   },
 ];
 
