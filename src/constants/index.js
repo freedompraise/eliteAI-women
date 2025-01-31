@@ -1,3 +1,4 @@
+import { FaInstagram, FaLinkedin, FaTiktok } from "react-icons/fa";
 import {
   facebook,
   instagram,
@@ -8,6 +9,7 @@ import {
   memoir,
   uniben,
 } from "../assets";
+import { FaX } from "react-icons/fa6";
 
 export const navLinks = [
   {
@@ -115,22 +117,22 @@ export const footerLinks = [
 export const socialMedia = [
   {
     id: "social-media-1",
-    icon: instagram,
+    icon: FaInstagram,
     link: "https://www.instagram.com/",
   },
   {
     id: "social-media-2",
-    icon: facebook,
+    icon: FaTiktok,
     link: "https://www.facebook.com/",
   },
   {
     id: "social-media-3",
-    icon: twitter,
+    icon: FaX,
     link: "https://www.twitter.com/",
   },
   {
     id: "social-media-4",
-    icon: linkedin,
+    icon: FaLinkedin,
     link: "https://www.linkedin.com/posts/ai-women-rising_aiforremotework-digitalcontentcreation-learnandearn-activity-7289717789634834432-lJY7?utm_source=share&utm_medium=member_android",
   },
 ];

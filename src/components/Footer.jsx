@@ -29,13 +29,15 @@ const Footer = () => (
       {/* Social Media Icons */}
       <div className="flex flex-row mt-6 md:mt-0 space-x-6">
         {socialMedia.map((social) => (
-          <img
+          <a
             key={social.id}
-            src={social.icon}
-            alt={social.id}
-            className="w-[24px] h-[24px] object-contain cursor-pointer"
-            onClick={() => window.open(social.link)}
-          />
+            href={social.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-white hover:text-blue-500 transition-colors duration-300"
+          >
+            <social.icon className="w-[24px] h-auto" />
+          </a>
         ))}
       </div>
     </div>
