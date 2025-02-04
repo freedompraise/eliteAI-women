@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 import blogPosts from "../constants/blogPosts.json";
 import Markdown from "markdown-to-jsx";
 import { motion } from "framer-motion";
@@ -30,9 +30,16 @@ const BlogDetail = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
         >
+          {/* Breadcrumbs */}
+          <nav className="mb-6 text-sm text-gray-400">
+            <Link to="/blogs" className="text-cyan-400 hover:text-cyan-300">
+              ← Back to Posts
+            </Link>
+          </nav>
+
           {/* Post Header */}
           <div className="mb-8">
-            <h1 className="text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400 mb-4 font-poppins">
+            <h1 className="text-4xl md:text-5xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400 mb-4 font-inter lg:leading-tight">
               {post.title}
             </h1>
             <p className="text-gray-400 text-sm">{post.date}</p>
