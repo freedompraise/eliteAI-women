@@ -24,15 +24,15 @@ const Navbar = () => {
           <li
             key={nav.id}
             className={`group font-poppins cursor-pointer text-[16px] ${
-              active === nav.title
+              active === nav.link
                 ? "text-secondary font-semibold"
                 : "text-dimWhite font-regular"
             } ${
               navLinks.indexOf(nav) === navLinks.length - 1 ? "mr-0" : "mr-10"
             }`}
-            onClick={() => setActive(nav.title)}
+            onClick={() => setActive(nav.link)}
           >
-            <a href={nav.link ? nav.link : `#${nav.id}`}>{nav.title}</a>
+            <a href={nav.link}>{nav.title}</a>
             <div className="h-0.5 bg-secondary scale-x-0 group-hover:scale-100 transition-transform origin-left rounded-full duration-300 ease-out" />
           </li>
         ))}
@@ -58,14 +58,14 @@ const Navbar = () => {
               <li
                 key={nav.id}
                 className={`font-poppins font-medium cursor-pointer text-[16px] mb-4 ${
-                  active === nav.title ? "text-white" : "text-dimWhite"
+                  active === nav.link ? "text-white" : "text-dimWhite"
                 }`}
                 onClick={() => {
-                  setActive(nav.title);
+                  setActive(nav.link);
                   setToggle(false); // Close menu on selection
                 }}
               >
-                <a href={nav.link ? nav.link : `#${nav.id}`}>{nav.title}</a>
+                <a href={nav.link}>{nav.title}</a>
               </li>
             ))}
           </ul>
