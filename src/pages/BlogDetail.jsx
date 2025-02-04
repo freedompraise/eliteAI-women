@@ -1,40 +1,7 @@
 import { useParams } from "react-router-dom";
 import blogPosts from "../constants/blogPosts.json";
-import { MDXProvider } from "@mdx-js/react";
+import Markdown from "markdown-to-jsx";
 import { motion } from "framer-motion";
-
-// Define custom components for MDX
-const components = {
-  h1: (props) => (
-    <h1 className="text-4xl font-bold text-gradient mb-4" {...props} />
-  ),
-  h2: (props) => (
-    <h2 className="text-3xl font-bold text-gradient mt-8 mb-4" {...props} />
-  ),
-  h3: (props) => (
-    <h3 className="text-2xl font-bold text-gradient mt-6 mb-3" {...props} />
-  ),
-  p: (props) => <p className="text-gray-300 mb-4" {...props} />,
-  a: (props) => (
-    <a
-      className="text-cyan-400 hover:text-cyan-300 underline"
-      target="_blank"
-      rel="noopener noreferrer"
-      {...props}
-    />
-  ),
-  ul: (props) => <ul className="list-disc pl-6 mb-4 space-y-2" {...props} />,
-  ol: (props) => <ol className="list-decimal pl-6 mb-4 space-y-2" {...props} />,
-  blockquote: (props) => (
-    <blockquote
-      className="border-l-4 border-purple-400 pl-4 my-8 italic text-gray-400"
-      {...props}
-    />
-  ),
-  img: (props) => (
-    <img className="rounded-lg my-4" style={{ maxWidth: "100%" }} {...props} />
-  ),
-};
 
 const BlogDetail = () => {
   const { slug } = useParams();
@@ -83,9 +50,68 @@ const BlogDetail = () => {
             {post.excerpt}
           </p>
 
-          {/* MDX Content */}
-          <div className="prose prose-invert max-w-none">
-            <MDXProvider components={components}>{post.content}</MDXProvider>
+          {/* Markdown Content */}
+          <div className="prose prose-invert max-w-none text-gray-200">
+            <Markdown
+              options={{
+                overrides: {
+                  h1: {
+                    component: "h1",
+                    props: {
+                      className: "text-4xl font-bold text-gradient mb-4",
+                    },
+                  },
+                  h2: {
+                    component: "h2",
+                    props: {
+                      className: "text-3xl font-bold text-gradient mt-8 mb-4",
+                    },
+                  },
+                  h3: {
+                    component: "h3",
+                    props: {
+                      className: "text-2xl font-bold text-gradient mt-6 mb-3",
+                    },
+                  },
+                  p: {
+                    component: "p",
+                    props: { className: "text-gray-200 mb-4" },
+                  },
+                  a: {
+                    component: "a",
+                    props: {
+                      className: "text-cyan-400 hover:text-cyan-300 underline",
+                      target: "_blank",
+                      rel: "noopener noreferrer",
+                    },
+                  },
+                  ul: {
+                    component: "ul",
+                    props: { className: "list-disc pl-6 mb-4 space-y-2" },
+                  },
+                  ol: {
+                    component: "ol",
+                    props: { className: "list-decimal pl-6 mb-4 space-y-2" },
+                  },
+                  blockquote: {
+                    component: "blockquote",
+                    props: {
+                      className:
+                        "border-l-4 border-purple-400 pl-4 my-8 italic text-gray-400",
+                    },
+                  },
+                  img: {
+                    component: "img",
+                    props: {
+                      className: "rounded-lg my-4",
+                      style: { maxWidth: "100%" },
+                    },
+                  },
+                },
+              }}
+            >
+              {post.content}
+            </Markdown>
           </div>
         </motion.article>
       </div>
