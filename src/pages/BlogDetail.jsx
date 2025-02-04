@@ -3,6 +3,7 @@ import blogPosts from "../constants/blogPosts.json";
 import { MDXProvider } from "@mdx-js/react";
 import { motion } from "framer-motion";
 
+// Define custom components for MDX
 const components = {
   h1: (props) => (
     <h1 className="text-4xl font-bold text-gradient mb-4" {...props} />
@@ -82,11 +83,9 @@ const BlogDetail = () => {
             {post.excerpt}
           </p>
 
-          {/* Markdown Content */}
+          {/* MDX Content */}
           <div className="prose prose-invert max-w-none">
-            <MDXProvider components={components}>
-              <div dangerouslySetInnerHTML={{ __html: post.content }} />
-            </MDXProvider>
+            <MDXProvider components={components}>{post.content}</MDXProvider>
           </div>
         </motion.article>
       </div>

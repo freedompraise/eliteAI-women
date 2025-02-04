@@ -1,22 +1,27 @@
 import { FaInstagram, FaLinkedin, FaTiktok } from "react-icons/fa";
 import { egit, ea, memoir, uniben } from "../assets";
 import { FaX } from "react-icons/fa6";
+import { link } from "framer-motion/client";
 
 export const navLinks = [
   {
     id: "program-details",
+    link: "/#program-details",
     title: "Program",
   },
   {
     id: "media-section",
+    link: "/#media-section",
     title: "Media",
   },
   {
     id: "cta",
+    link: "/#cta",
     title: "Apply Now",
   },
   {
     id: "clients",
+    link: "/#clients",
     title: "Partners",
   },
   {
