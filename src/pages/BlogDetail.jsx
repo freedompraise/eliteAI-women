@@ -75,7 +75,7 @@ const BlogDetail = () => {
                   },
                   p: {
                     component: "p",
-                    props: { className: "text-gray-200 mb-4" },
+                    props: { className: "text-gray-200 lg:text-lg mb-4" },
                   },
                   a: {
                     component: "a",
