@@ -32,7 +32,7 @@ const BlogDetail = () => {
         >
           {/* Post Header */}
           <div className="mb-8">
-            <h1 className="text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-cyan-400 mb-4 font-poppins">
+            <h1 className="text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400 mb-4 font-poppins">
               {post.title}
             </h1>
             <p className="text-gray-400 text-sm">{post.date}</p>
@@ -97,7 +97,7 @@ const BlogDetail = () => {
                     component: "blockquote",
                     props: {
                       className:
-                        "border-l-4 border-purple-400 pl-4 my-8 italic text-gray-400",
+                        "border-l-4 border-blue-400 pl-4 my-8 italic text-gray-400",
                     },
                   },
                   img: {
