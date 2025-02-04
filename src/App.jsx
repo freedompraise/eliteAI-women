@@ -20,7 +20,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/blogs" element={<BlogList />} />
-        <Route path="/blogs/:id" element={<BlogDetail />} />
+        <Route path="/blogs/:slug" element={<BlogDetail />} />
       </Routes>
 
       <div className="bg-primary w-full overflow-hidden">

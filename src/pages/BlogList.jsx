@@ -4,19 +4,19 @@ import blogPosts from "../constants/blogPosts.json";
 
 const BlogList = () => {
   return (
-    <section className="relative bg-gradient-to-br from-gray-900 via-gray-800 to-black py-16 min-h-screen">
+    <section className="relative bg-gradient-to-br from-gray-900 via-gray-800 to-black py-16">
       {/* Background Effects */}
       <div className="absolute inset-0">
         <div className="absolute w-96 h-96 bg-blue-gradient blur-3xl rounded-full -top-10 -left-10 opacity-40"></div>
         <div className="absolute w-96 h-96 bg-blue-gradient blur-3xl rounded-full bottom-0 right-0 opacity-40"></div>
       </div>
 
-      <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h1 className="text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-cyan-400 mb-12 font-poppins text-center">
+      <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h1 className="text-3xl md:text-4xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400 mb-12 font-poppins text-center">
           Our Blog
         </h1>
 
-        <div className="space-y-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {blogPosts.map((post) => (
             <motion.article
               key={post.id}
