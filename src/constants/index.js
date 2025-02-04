@@ -1,16 +1,6 @@
 import { FaInstagram, FaLinkedin, FaTiktok } from "react-icons/fa";
-import {
-  facebook,
-  instagram,
-  linkedin,
-  twitter,
-  egit,
-  ea,
-  memoir,
-  uniben,
-} from "../assets";
+import { egit, ea, memoir, uniben } from "../assets";
 import { FaX } from "react-icons/fa6";
-import { link } from "framer-motion/client";
 
 export const navLinks = [
   {
@@ -31,7 +21,7 @@ export const navLinks = [
   },
   {
     id: "blog",
-    link: "/blog",
+    link: "/blogs",
     title: "Blog",
   },
 ];
