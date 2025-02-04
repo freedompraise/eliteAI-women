@@ -10,6 +10,7 @@ import {
   uniben,
 } from "../assets";
 import { FaX } from "react-icons/fa6";
+import { link } from "framer-motion/client";
 
 export const navLinks = [
   {
@@ -27,6 +28,11 @@ export const navLinks = [
   {
     id: "clients",
     title: "Partners",
+  },
+  {
+    id: "blog",
+    link: "/blog",
+    title: "Blog",
   },
 ];
 

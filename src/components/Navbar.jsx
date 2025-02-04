@@ -18,17 +18,19 @@ const Navbar = () => {
 
       {/* Desktop Nav Links */}
       <ul className="list-none sm:flex hidden justify-end items-center flex-1">
-        {navLinks.map((nav, index) => (
+        {navLinks.map((nav) => (
           <li
             key={nav.id}
             className={`group font-poppins cursor-pointer text-[16px] ${
               active === nav.title
                 ? "text-secondary font-semibold"
                 : "text-dimWhite font-regular"
-            } ${index === navLinks.length - 1 ? "mr-0" : "mr-10"}`}
+            } ${
+              navLinks.indexOf(nav) === navLinks.length - 1 ? "mr-0" : "mr-10"
+            }`}
             onClick={() => setActive(nav.title)}
           >
-            <a href={`#${nav.id}`}>{nav.title}</a>
+            <a href={nav.link ? nav.link : `#${nav.id}`}>{nav.title}</a>
             <div className="h-0.5 bg-secondary scale-x-0 group-hover:scale-100 transition-transform origin-left rounded-full duration-300 ease-out" />
           </li>
         ))}
@@ -50,7 +52,7 @@ const Navbar = () => {
           } p-6 fixed top-16 left-16 w-screen z-10`}
         >
           <ul className="list-none flex flex-col justify-center items-center flex-1">
-            {navLinks.map((nav, index) => (
+            {navLinks.map((nav) => (
               <li
                 key={nav.id}
                 className={`font-poppins font-medium cursor-pointer text-[16px] mb-4 ${
@@ -61,7 +63,7 @@ const Navbar = () => {
                   setToggle(false); // Close menu on selection
                 }}
               >
-                <a href={`#${nav.id}`}>{nav.title}</a>
+                <a href={nav.link ? nav.link : `#${nav.id}`}>{nav.title}</a>
               </li>
             ))}
           </ul>
