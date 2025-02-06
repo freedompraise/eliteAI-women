@@ -20,8 +20,8 @@ const BlogDetail = () => {
     <section className="relative bg-gradient-to-br from-gray-900 via-gray-800 to-black py-16 min-h-screen">
       {/* Background Effects */}
       <div className="absolute inset-0">
-        <div className="absolute w-96 h-96 bg-blue-gradient blur-3xl rounded-full -top-10 -left-10 opacity-40"></div>
-        <div className="absolute w-96 h-96 bg-blue-gradient blur-3xl rounded-full bottom-0 right-0 opacity-40"></div>
+        <div className="absolute w-96 h-96 bg-blue-gradient blur-3xl rounded-full -top-10 -left-10 opacity-30"></div>
+        <div className="absolute w-96 h-96 bg-blue-gradient blur-3xl rounded-full bottom-0 right-0 opacity-20"></div>
       </div>
 
       <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -32,7 +32,7 @@ const BlogDetail = () => {
         >
           {/* Breadcrumbs */}
           <nav className="mb-6 text-sm text-gray-400">
-            <Link to="/blogs" className="text-cyan-400 hover:text-cyan-300">
+            <Link to="/blogs" className="text-blue-400 hover:text-cyan-300">
               ← Back to Posts
             </Link>
           </nav>
