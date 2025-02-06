@@ -39,7 +39,7 @@ const BlogDetail = () => {
 
           {/* Post Header */}
           <div className="mb-8">
-            <h1 className="text-4xl md:text-5xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400 mb-4 font-inter lg:leading-tight">
+            <h1 className="text-4xl md:text-5xl font-semibold text-transparent bg-clip-text bg-gradient-to-tl from-blue-400 to-cyan-400 mb-4 font-inter lg:leading-tight">
               {post.title}
             </h1>
             <p className="text-gray-400 text-sm">{post.date}</p>
